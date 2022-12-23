@@ -6,8 +6,8 @@ class Car {
   }
 
   cloneCar() {
-    const extendingClass = this.constructor.toString().split(" ")[1];
-    if (extendingClass == "EVCar") {
+    const extendingClass = this.constructor.toString().split(' ')[1];
+    if (extendingClass == 'EVCar') {
       return Object.create(Car.prototype);
     } else {
       return Object.create(this, Object.getOwnPropertySymbols(this));
