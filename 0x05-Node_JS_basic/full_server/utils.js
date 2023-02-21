@@ -1,5 +1,5 @@
-const { resolve } = require('node:path');
-const { readFile } = require('node:fs/promises');
+const { resolve } = require('path');
+const { readFile } = require('fs/promises');
 
 const logStudents = (students) => {
   const fields = {};

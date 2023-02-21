@@ -1,7 +1,7 @@
 const express = require('express');
 const http = require('http');
-const { resolve } = require('node:path');
-const { readFile } = require('node:fs/promises');
+const { resolve } = require('path');
+const { readFile } = require('fs/promises');
 
 const app = express();
 const port = '1245';
@@ -31,7 +31,7 @@ const logStudents = (students) => {
   // eslint-disable-next-line array-callback-return
   keys.map((key) => {
     content = content.concat(
-      `Number of students in ${key}: ${fields[key].count}. `,
+      `Number of students in ${key}: ${fields[key].count}. `
     );
     content = content.concat('List:');
 

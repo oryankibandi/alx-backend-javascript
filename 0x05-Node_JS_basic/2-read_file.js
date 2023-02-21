@@ -1,5 +1,5 @@
-const { resolve } = require('node:path');
-const { readFileSync } = require('node:fs');
+const { resolve } = require('path');
+const { readFileSync } = require('fs');
 
 const logStudents = (students) => {
   const fields = {};

@@ -1,6 +1,6 @@
-const http = require('node:http');
-const { resolve } = require('node:path');
-const { readFile } = require('node:fs/promises');
+const http = require('http');
+const { resolve } = require('path');
+const { readFile } = require('fs/promises');
 
 const port = '1245';
 const host = 'localhost';

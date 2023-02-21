@@ -1,4 +1,4 @@
-const { stdout } = require('node:process');
+const { stdout } = require('process');
 
 const displayMessage = (message) => {
   stdout.write(`${message}\n`);

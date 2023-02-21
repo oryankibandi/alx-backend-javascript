@@ -1,4 +1,4 @@
-const { stdin, stdout } = require('node:process');
+const { stdin, stdout } = require('process');
 
 stdout.write('Welcome to Holberton School, what is your name?\n');
 
