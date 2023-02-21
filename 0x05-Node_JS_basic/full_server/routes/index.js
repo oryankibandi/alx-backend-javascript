@@ -4,9 +4,13 @@ import StudentsController from '../controllers/StudentsController';
 
 const setUpRoutes = (app) => {
   app.use(bodyParser.urlencoded({ extended: true }));
-  app.get('/', AppController.getHomepage());
-  app.get('/students', StudentsController.getAllStudents);
-  app.get('/students/:major', AppController.getAllStudentsByMajor);
+  app.get('/', (req, res) => AppController.getHomepage(req, res));
+  app.get('/students', (req, res) =>
+    StudentsController.getAllStudents(req, res)
+  );
+  app.get('/students/:major', (req, res) =>
+    AppController.getAllStudentsByMajor(req, res)
+  );
 };
 
 module.exports = setUpRoutes;
